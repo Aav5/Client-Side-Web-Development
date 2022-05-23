@@ -1,0 +1,165 @@
+nav {
+    width: 100%;
+    background-color: green;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+ul > li {
+    margin-right: 1rem;
+    display: inline;
+  }
+
+nav > ul {
+    margin: 0;
+    padding: 0;
+    padding-top: .5rem;
+    display: inline-block;
+  }
+
+.searchBox, button {
+    float: right;
+    
+}
+
+header {
+    margin-top: 50px;
+}
+h1 {
+    font-weight: 400;
+    font-size: 50px;
+    text-align: center;
+}
+
+.container-photo {
+    margin: 5px;
+    max-width: 400px;
+    max-height: 400px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container-photo img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.animal-details {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: green;
+    border-radius: 10px;
+}
+
+.container-photo:hover .animal-details {
+    opacity: .8;
+}
+
+.detail-text {
+    color: white;
+    font-size: 25px;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.landing {
+    margin: .5rem;
+    background-image: url("../img/landing-md.jpg");
+    background-position-y: -3%;
+    background-position-x: center;
+    background-size: 220%;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.landing nav a {
+    color: white;
+    font-size: 2.5rem;
+    margin-right: .5em;
+}
+
+.landing main {
+    text-align: center;
+    font-family: "Kaushan Script", fantasy;
+    margin-top: 23vh;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 2em;
+}
+
+.landing footer {
+    position: fixed;
+    display: block;
+    bottom: 0;
+    right: 2;
+    font-family: 'Courier New', Courier, monospace;
+    color: forestgreen;
+    font-size: 90%;
+}
+
+@media (min-width: 598px) {
+    .landing #hamburger-menu {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .landing {
+        background-image: url('../img/landing-md.jpg');
+        background-position: center;
+        background-size: 100%;
+        background-position-x: center;
+        background-repeat: no-repeat;
+        color: white;
+    }
+
+    html {
+        height: 100%;
+    }
+
+    .landing footer {
+        position: fixed;
+        display: block;
+        bottom: 0;
+        right: 2;
+    }
+}
+
+@media (min-width: 992px) {
+    .landing body {
+        background-image: url('../img/landing-lg.jpg');
+        background-size: 100%;
+    }
+
+    .landing nav a {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .landing body {
+        background-image: url('../img/landing-lg.jpg');
+    }
+}
+
